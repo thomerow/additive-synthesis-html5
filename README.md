@@ -5,7 +5,7 @@ Does graphical additive synthesis via Fourier Series. Created at the Intel 2014 
 
 Written in JavaScript and using HTML5 Canvas, we are able to use Joseph Fourier's Fourier Series to add a number of sinusoidal waveforms together in order to approximate a Square Wave or Sawtooth Wave.
 
-##Technical Explanation
+## Technical Explanation
 
 Fourier Series are important to physics. It is a branch of Fourier Analysis, which is useful in many ways, such as in signal processing:
 
@@ -21,7 +21,7 @@ Fourier Series are important to physics. It is a branch of Fourier Analysis, whi
 
 See Wikipedia articles on [Fourier Analysis](http://en.wikipedia.org/wiki/Fourier_analysis) and [Fourier Series](http://en.wikipedia.org/wiki/Fourier_series).
 
-##Sawtooth Wave
+## Sawtooth Wave
 
 The JavaScript/HTML5 code below is an implementation of the Fourier Series for a sawtooth wave:
 
@@ -48,7 +48,7 @@ You can see that this is an implementation of the equation
 
 ![Sawtooth Equation](https://raw.githubusercontent.com/thomerow/additive-synthesis-html5/master/sawtooth_eqn_wikipedia.png "Sawtooth Equation")
 
-##Square Wave
+## Square Wave
 
 ```javascript
 case "square":
@@ -73,7 +73,7 @@ You can see that this is an implementation of the equation
 
 ![Square Equation](https://raw.githubusercontent.com/thomerow/additive-synthesis-html5/master/square_eqn_wikipedia.png "Square Equation")
 
-##Triangle Wave
+## Triangle Wave
 
 ```javascript
 case "triangle":
