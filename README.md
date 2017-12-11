@@ -46,7 +46,7 @@ case "sawtooth":
 
 You can see that this is an implementation of the equation
 
-![Sawtooth Equation](https://raw.githubusercontent.com/chuck-knox/additive-synthesis-html5/master/sawtooth_eqn_wikipedia.png "Sawtooth Equation")
+![Sawtooth Equation](https://raw.githubusercontent.com/thomerow/additive-synthesis-html5/master/sawtooth_eqn_wikipedia.png "Sawtooth Equation")
 
 ##Square Wave
 
@@ -71,4 +71,25 @@ case "square":
 
 You can see that this is an implementation of the equation
 
-![Square Equation](https://raw.githubusercontent.com/chuck-knox/additive-synthesis-html5/master/square_eqn_wikipedia.png "Square Equation")
+![Square Equation](https://raw.githubusercontent.com/thomerow/additive-synthesis-html5/master/square_eqn_wikipedia.png "Square Equation")
+
+##Triangle Wave
+
+```javascript
+case "triangle":
+                var rightHandSum = 0;
+                for (var x = 0; x < 500 + timeOffset * 2; x += 0.1) {
+                    i = 1;
+                    for (var kk = 1; kk <= k; kk++) {
+                        n = 2 * kk - 1;
+                        rightHandSum += (Math.sin(2 * 3.141 * n * f * x) / (n * n)) * i;
+                        i = -i;
+                    }
+                    var y = a - (a / 3.141) * rightHandSum;
+                    wave.lineTo(x - timeOffset * 2, y);
+                    rightHandSum = 0;
+                }
+                break;
+```
+
+![Triangle Equation](https://raw.githubusercontent.com/thomerow/additive-synthesis-html5/master/triangle_eqn_wikipedia.png "Triangle Equation")
